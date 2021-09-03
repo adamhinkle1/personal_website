@@ -1,1 +1,5 @@
-# Adam Hinkle's personal portfolio
+# Adam Hinkle's Personal Portfolio
+
+adamhinkle.net
+
+
