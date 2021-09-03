@@ -1,0 +1,272 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+.section {
+  padding: 8rem 0 0.5rem;
+  text-align: center;
+}
+
+#section-a {
+  padding: 1rem 0 2rem;
+  height: 2vh;
+  /*  border: 1px solid black;*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  color: #b22929;
+}
+
+h4 a {
+  color: #b22929;
+  border-bottom: 1px solid currentColor;
+  /* text-decoration: underline 1px; */
+}
+
+.splash {
+  height: 75vh;
+  display: table;
+  padding: 1rem;
+  /*border: 1px solid black;*/
+}
+@media (min-width: 400px) {
+  .splash {
+    padding: 7rem;
+  }
+}
+.splash-typing {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.welcome-img {
+  position: relative;
+  max-width: 100%;
+  size: 10%;
+  padding: 0 0 15rem;
+}
+
+.category-text {
+  font-size: 1.2em;
+  text-align: left;
+  font-weight: 800;
+  color: #b22929;
+}
+@media (min-width: 550px) {
+  .category-text {
+    font-size: 1em;
+    text-align: right;
+  }
+}
+@media (min-width: 650px) {
+  .category-text {
+    font-size: 1.2em;
+  }
+}
+
+.paragraph-text {
+  text-align: left;
+}
+
+.paragraph-text p {
+  margin: 0;
+}
+
+#goodbye h5 {
+  font-size: 1.2em;
+  line-height: 0.5em;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation-duration: 4.5s;
+  animation: typing 1.5s steps(29, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #b22929;
+  }
+}
+
+.intro-typing-txt {
+  /*font-family: monospace;*/
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+}
+
+#second-intro-typing-txt {
+  text-indent: -9999px;
+}
+
+.welcome {
+  position: relative;
+}
+
+#my-photo {
+  background-image: url(../_img/adam.png);
+}
+
+#my-text {
+  padding-bottom: 0px;
+  position: relative;
+  bottom: 0px;
+}
+
+#goodbye {
+  position: relative;
+  top: -40px;
+}
+
+.parallax {
+  /* Full height */
+  height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0.1em #111;
+}
+
+.experience-title a {
+  font-weight: 900;
+  color: black;
+}
+.experience-subtitle {
+  color: grey;
+  font-weight: 800;
+}
+.experience-date {
+  text-align: left;
+  color: grey;
+  font-style: italic;
+}
+@media (min-width: 600px) {
+  .experience-date {
+    text-align: right;
+  }
+}
+.experience-description {
+  font-size: 0.9em;
+}
+
+@media (min-width: 550px) {
+  .experience-description {
+    padding-top: 1rem;
+  }
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+li {
+  padding-left: 1.4em;
+  text-indent: -1.4em;
+}
+
+li:before {
+  content: ">>";
+  padding-right: 5px;
+}
+
+a,
+.center-link {
+  text-align: center;
+  color: #b22929;
+  text-decoration: none;
+}
+a:hover {
+  color: grey;
+}
+
+@media (max-width: 800px) {
+  #my-text {
+    display: none;
+  }
+  #my-photo {
+    display: none;
+  }
+}
+
+#arrowVertDiv {
+  height: 30vh;
+  opacity: 0;
+}
+
+@keyframes bouncing {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+.arrow {
+  animation: bouncing 1s infinite ease-in-out;
+  bottom: 0;
+  display: block;
+  height: 50px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  width: 50px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.gallery_item {
+  background: gray;
+  overflow: hidden;
+}
+.gallery_item:hover {
+  border: white solid 2px;
+}
+.gallery__img {
+  height: 100%;
+  transition: transform 500ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
+}
+.gallery__img:hover {
+  transform: scale(1.2);
+  opacity: 0.65;
+}
