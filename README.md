@@ -1,5 +1,5 @@
 # Adam Hinkle's Personal Portfolio
 
-adamhinkle.net
+(https://www.adamhinkle.net)
 
 
